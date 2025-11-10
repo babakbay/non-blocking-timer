@@ -53,6 +53,14 @@ while (true) {
 }
 ```
 
+### Clear timer
+
+To stop and clear an active timer, use the clear() method.
+
+```php
+$timer->clear();
+```
+
 ### Critical sections
 
 You can disable callbacks during critical sections of your code using the
@@ -99,3 +107,8 @@ $timer->signals(false);
 $result = curl_exec($ch);
 $timer->signals(true);
 ```
+
+
+
+
+
