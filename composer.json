@@ -1,0 +1,13 @@
+{
+  "name": "babakbay/nonblocking-timer",
+  "description": "Non-blocking JavaScript-like setTimeout/setInterval for PHP.",
+  "type": "library",
+  "autoload": {
+    "psr-4": {
+      "BabakBay\\NonBlockingTimer\\": "src/"
+    }
+  },
+  "require": {
+    "php": ">=8.1"
+  }
+}
