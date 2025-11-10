@@ -1,5 +1,5 @@
 {
-  "name": "babakbay/nonblocking-timer",
+  "name": "babakbay/non-blocking-timer",
   "description": "Non-blocking JavaScript-like setTimeout/setInterval for PHP.",
   "type": "library",
   "autoload": {
