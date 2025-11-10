@@ -1,4 +1,4 @@
-# Non-blocking PHP Timer Library
+# A PHP Non-blocking Timer Library
 
 This timer uses a combination of a forked process (or a thread if Swoole v6+ is detected) together with POSIX signals to invoke a callback at a specified interval with millisecond-level accuracy — even when the PHP interpreter is suspended (e.g. during database or network queries, or system calls such as sleep(), curl_exec(), fread(), etc).
 
@@ -75,7 +75,8 @@ $timer->callbacks(true); // Re-enable ca;;nacls and invoke any pending callback
 
 // If you do not want to invoke any pending callbacks, pass true as the
 // second argument.
-$timer->callbacks(false, true); // Do not end any callbacks
+
+$timer->callbacks(false, true); // Do not pend callbacks
 performCriticalOperation();
 $timer->callbacks(true); // Re-enable callbacks
 
@@ -98,8 +99,3 @@ $timer->signals(false);
 $result = curl_exec($ch);
 $timer->signals(true);
 ```
-
-
-
-
-
